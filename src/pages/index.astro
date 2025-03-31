@@ -15,7 +15,12 @@ const pageTitle = "Home";
 
 <BaseLayout pageTitle={pageTitle}>
   <section class="relative">
-    <Image src={heroImg} alt="hero" class="h-dvh w-full object-cover" />
+    <Image
+      src={heroImg}
+      alt="hero"
+      class="h-dvh w-full object-cover"
+      loading="eager"
+    />
     <div class="absolute inset-0 h-full w-full bg-black opacity-70"></div>
     <div
       class="absolute inset-0 h-full w-full flex flex-col justify-center items-center gap-32"
@@ -25,6 +30,7 @@ const pageTitle = "Home";
           src={enzoGlowLogo}
           alt="enzo glow logo"
           class="h-40 w-min my-2"
+          loading="eager"
         />
         <p class="text-2xl font-light">Gentle, Holistic, Korean Skincare</p>
       </div>
